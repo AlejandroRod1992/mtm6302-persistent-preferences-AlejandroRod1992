@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Persistent Preferences</title>
+    <title>Theme Changer</title>
 </head>
-
 <body>
+
     <div class="container">
-        <ul id="list">
-            <!-- List items will be dynamically added here -->
-        </ul>
-        <div id="preferences">
+        <div class="list">
+            <h2>Your Favorite Fruit</h2>
+            <ul id="dynamic-list"></ul>
+        </div>
+
+        <div class="preferences">
             <h2>Preferences</h2>
-            <label for="theme">Choose Theme:</label>
+            <label for="theme">Select Theme:</label>
             <select id="theme">
-                <option value="theme1">Theme 1</option>
-                <option value="theme2">Theme 2</option>
-                <option value="theme3">Theme 3</option>
+                <option value="theme1" class="theme1">Theme 1</option>
+                <option value="theme2" class="theme2">Theme 2</option>
+                <option value="theme3" class="theme3">Theme 3</option>
             </select>
 
-            <label for="listStyle">Choose List Style:</label>
-            <select id="listStyle">
-                <option value="style1">Style 1</option>
-                <option value="style2">Style 2</option>
-                <option value="style3">Style 3</option>
+            <label for="list-style">Select List Style:</label>
+            <select id="list-style">
+                <option value="list-style1" class="list-style1">List Style 1</option>
+                <option value="list-style2" class="list-style2">List Style 2</option>
+                <option value="list-style3" class="list-style3">List Style 3</option>
             </select>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
