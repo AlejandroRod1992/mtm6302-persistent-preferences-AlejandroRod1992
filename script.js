@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
    
-    // Create local storage
+    //local storage
     const savedTheme = localStorage.getItem('theme') || 'theme1';
     const savedListStyle = localStorage.getItem('listStyle') || 'list-style1';
 
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('list-style').value = savedListStyle;
     applyPreferences();
 
-    // Add items to the list
+    //items for the list
     const dynamicList = document.getElementById('dynamic-list');
     const items = ['Yellow', 'Blue', 'Red', 'Brown', 'Pink'];
 
